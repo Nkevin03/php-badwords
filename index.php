@@ -4,11 +4,11 @@
 
     echo '<br>' .strlen($text);
 
-    $delete = 'ipsum';
-
+    $badword = $_GET['badword'];
+    echo "BADWORD: ".$badword;
     echo '<br>'; 
     
-    echo $text2 = str_replace($delete, '***', $text);
+    echo $text2 = str_replace($badword, '***', $text);
     
     echo '<br>' .strlen($text2);
 ?>
